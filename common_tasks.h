@@ -3,6 +3,7 @@
 #define CLRBITS(x,y) ((x) &= (~(y)))
 #define SETBIT(x,y) SETBITS((x), (BIT((y))))
 #define CLRBIT(x,y) CLRBITS((x), (BIT((y))))
+#define ISONE(x,y) (x & (1 << y)) 
 
 #define W 1
 #define R 0
